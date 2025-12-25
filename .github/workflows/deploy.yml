@@ -32,6 +32,10 @@ jobs:
 
       - name: Build
         run: npm run build
+        
+      - name: List dist contents
+        if: always()
+        run: ls -la dist/ || echo "dist folder not found"
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
