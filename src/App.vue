@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-slate-900 min-h-screen">
+  <div class="bg-gray-900 min-h-screen">
     <Dashboard v-if="currentPage === 'dashboard'" @navigate="handleNavigate" />
     <ModuleReader 
       v-else-if="currentPage === 'module'" 
