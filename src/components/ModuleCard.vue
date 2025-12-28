@@ -73,7 +73,6 @@
             ? 'bg-gradient-to-r from-emerald-600/40 to-emerald-700/20 text-emerald-200 hover:from-emerald-600/60 hover:to-emerald-700/40 border border-emerald-500/40 hover:border-emerald-400/70 hover:shadow-lg hover:shadow-emerald-500/30' 
             : 'bg-gradient-to-r from-blue-600/40 to-purple-600/30 text-blue-100 hover:from-blue-600/60 hover:to-purple-600/50 border border-blue-500/40 hover:border-blue-400/70 hover:shadow-lg hover:shadow-blue-500/40'
         ]"
-        @click.stop
       >
         <!-- Shimmer effect -->
         <div v-if="!isLocked" class="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent group-hover/btn:animate-shimmer" style="background-size: 1000px 100%; animation: shimmer 2s infinite;"></div>
