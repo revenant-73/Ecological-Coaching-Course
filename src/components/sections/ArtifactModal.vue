@@ -1,33 +1,33 @@
 <template>
   <div class="fixed inset-0 bg-black bg-opacity-50 z-50 flex items-center justify-center p-4">
-    <div class="bg-slate-900 rounded-lg shadow-xl max-w-3xl w-full max-h-[80vh] overflow-auto border border-slate-700">
-      <div class="sticky top-0 bg-slate-800 border-b border-slate-700 p-6 flex justify-between items-start gap-4">
+    <div class="bg-gray-900 rounded-lg shadow-xl max-w-3xl w-full max-h-[80vh] overflow-auto border border-accent-teal-light">
+      <div class="sticky top-0 bg-gray-800 border-b border-accent-teal-light p-6 flex justify-between items-start gap-4">
         <div>
           <h2 class="text-2xl font-bold text-white">{{ artifact.title }}</h2>
-          <p class="text-slate-400 text-sm mt-1">{{ artifact.category }}</p>
+          <p class="text-gray-400 text-sm mt-1">{{ artifact.category }}</p>
         </div>
         <button 
           @click="closeModal"
-          class="text-slate-400 hover:text-white text-2xl flex-shrink-0"
+          class="text-gray-400 hover:text-white text-2xl flex-shrink-0"
         >
           ✕
         </button>
       </div>
 
-      <div class="p-6 prose prose-invert max-w-none text-slate-200">
+      <div class="p-6 prose prose-invert max-w-none text-gray-200">
         <div class="artifact-content" v-html="renderedContent"></div>
       </div>
 
-      <div class="sticky bottom-0 bg-slate-800 border-t border-slate-700 p-6 flex gap-3">
+      <div class="sticky bottom-0 bg-gray-800 border-t border-accent-teal-light p-6 flex gap-3">
         <button 
           @click="downloadArtifact"
-          class="px-4 py-2 bg-emerald-600 hover:bg-emerald-700 text-white rounded font-medium transition"
+          class="px-4 py-2 bg-accent-teal-light hover:bg-accent-teal text-white rounded font-medium transition"
         >
           Download
         </button>
         <button 
           @click="closeModal"
-          class="px-4 py-2 bg-slate-700 hover:bg-slate-600 text-white rounded font-medium transition"
+          class="px-4 py-2 bg-gray-700 hover:bg-gray-600 text-white rounded font-medium transition"
         >
           Close
         </button>
@@ -114,7 +114,7 @@ const renderedContent = computed(() => {
 .artifact-content :deep(h3) {
   font-size: 1.25rem;
   font-weight: 600;
-  color: #a3e635;
+  color: #14B8A6;
   margin-top: 1rem;
   margin-bottom: 0.5rem;
 }
@@ -137,7 +137,7 @@ const renderedContent = computed(() => {
 
 .artifact-content :deep(code) {
   background-color: #1e293b;
-  color: #10b981;
+  color: #FF6B35;
   padding: 0.25rem 0.5rem;
   border-radius: 0.25rem;
   font-size: 0.875rem;
@@ -150,7 +150,7 @@ const renderedContent = computed(() => {
 }
 
 .artifact-content :deep(blockquote) {
-  border-left: 4px solid #059669;
+  border-left: 4px solid #FF6B35;
   padding-left: 1rem;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;

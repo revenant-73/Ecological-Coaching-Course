@@ -1,29 +1,29 @@
 <template>
-  <div class="bg-emerald-900 border border-emerald-700 rounded-lg p-6 my-6">
+  <div class="bg-gray-800 border border-accent-teal-light rounded-lg p-6 my-6">
     <div class="flex items-start gap-3 mb-4">
-      <svg class="w-6 h-6 text-emerald-400 mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+      <svg class="w-6 h-6 text-accent-teal-light mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
         <path fill-rule="evenodd" d="M5 4v12h10V4H5zm-1-1h12a1 1 0 011 1v14a1 1 0 01-1 1H4a1 1 0 01-1-1V4a1 1 0 011-1z" clip-rule="evenodd" />
       </svg>
       <div class="flex-grow">
         <h3 class="text-lg font-semibold text-white">RESOURCE</h3>
-        <p class="text-emerald-200 text-sm">{{ artifact.title }}</p>
+        <p class="text-accent-teal-light text-sm">{{ artifact.title }}</p>
       </div>
     </div>
 
-    <p class="text-emerald-100 mb-4 text-sm">
+    <p class="text-gray-300 mb-4 text-sm">
       {{ artifact.category }}
     </p>
 
     <div class="flex gap-3">
       <button 
         @click="viewArtifact"
-        class="px-4 py-2 bg-emerald-600 hover:bg-emerald-700 text-white rounded font-medium text-sm transition"
+        class="px-4 py-2 bg-accent-teal-light hover:bg-accent-teal text-white rounded font-medium text-sm transition"
       >
         View
       </button>
       <button 
         @click="downloadArtifact"
-        class="px-4 py-2 border border-emerald-400 hover:bg-emerald-900 text-emerald-200 rounded font-medium text-sm transition"
+        class="px-4 py-2 border border-accent-teal-light hover:bg-gray-700 text-accent-teal-light rounded font-medium text-sm transition"
       >
         Download
       </button>

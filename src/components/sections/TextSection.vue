@@ -1,6 +1,6 @@
 <template>
   <div class="animate-fade-in-up">
-    <div class="max-w-none text-slate-200 text-lg sm:text-xl leading-relaxed whitespace-pre-wrap space-y-4">
+    <div class="max-w-none text-gray-200 text-lg sm:text-xl leading-relaxed whitespace-pre-wrap space-y-4">
       <div v-html="renderMarkdown(section.content)"></div>
     </div>
   </div>
@@ -19,9 +19,9 @@ const renderMarkdown = (text) => {
     .split('\n')
     .map(line => {
       line = line
-        .replace(/\*\*(.*?)\*\*/g, '<strong class="font-bold text-blue-300">$1</strong>')
-        .replace(/\*(.*?)\*/g, '<em class="italic text-slate-300">$1</em>')
-        .replace(/>(.*?)$/gm, '<blockquote class="border-l-4 border-blue-500 pl-4 my-3 text-slate-300 italic">$1</blockquote>')
+        .replace(/\*\*(.*?)\*\*/g, '<strong class="font-bold text-accent-orange">$1</strong>')
+        .replace(/\*(.*?)\*/g, '<em class="italic text-gray-300">$1</em>')
+        .replace(/>(.*?)$/gm, '<blockquote class="border-l-4 border-accent-orange pl-4 my-3 text-gray-300 italic">$1</blockquote>')
       
       if (line.startsWith('- ')) {
         return `<li class="ml-4">${line.replace(/^- /, '')}</li>`
