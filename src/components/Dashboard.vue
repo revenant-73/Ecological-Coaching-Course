@@ -15,7 +15,7 @@
           <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-8">
             <div>
               <h2 class="text-2xl font-bold mb-2 text-slate-100">Your Progress</h2>
-              <p class="text-slate-400 text-base sm:text-lg"><span class="font-semibold text-blue-300">{{ completedModules }}</span> of <span class="font-semibold text-purple-300">9 modules</span> completed</p>
+              <p class="text-slate-400 text-base sm:text-lg"><span class="font-semibold text-blue-300">{{ completedModules }}</span> of <span class="font-semibold text-purple-300">{{ modules.length }} modules</span> completed</p>
             </div>
             <div class="w-full sm:w-64">
               <div class="bg-slate-700/30 rounded-full h-5 overflow-hidden border border-slate-600/50 shadow-lg shadow-slate-900/50">
@@ -34,6 +34,24 @@
         </div>
       </div>
 
+      <div class="mb-12 animate-fade-in-up" style="animation-delay: 150ms">
+        <h2 class="text-2xl font-bold mb-6 text-slate-100">Course Tiers</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+          <TierCard 
+            v-for="tierNum in [0, 1, 2]"
+            :key="tierNum"
+            :tierNumber="tierNum"
+            :tierInfo="tierInfo[`tier${tierNum}`]"
+            :isUnlocked="unlockedTiers.includes(tierNum)"
+            @unlock="unlockTier"
+          />
+        </div>
+      </div>
+
+      <div class="mb-8">
+        <h2 class="text-2xl font-bold mb-6 text-slate-100">Modules</h2>
+      </div>
+
       <div class="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-7">
         <div
           v-for="(module, idx) in modules"
@@ -44,6 +62,7 @@
           <ModuleCard
             :module="module"
             :progress="getProgress(module.id)"
+            :isLocked="!canAccessModule(module.id)"
             @click="selectModule(module.id)"
           />
         </div>
@@ -66,18 +85,30 @@ import { computed } from 'vue'
 import { modules } from '../data/modules.js'
 import { courseStore, courseActions } from '../store/courseStore.js'
 import ModuleCard from './ModuleCard.vue'
+import TierCard from './TierCard.vue'
+
+const emit = defineEmits(['navigate'])
 
 const completionPercentage = computed(() => courseActions.getCompletionPercentage())
 const completedModules = computed(() => {
   return Object.values(courseStore.progress).filter(p => p.completed).length
 })
 
+const unlockedTiers = computed(() => courseActions.unlockedTierNumbers())
+const tierInfo = computed(() => courseActions.getTierInfo())
+
 const getProgress = (moduleId) => courseActions.getProgress(moduleId)
+const canAccessModule = (moduleId) => courseActions.canAccessModule(moduleId)
 
 const selectModule = (moduleId) => {
-  courseActions.startModule(moduleId)
-  const event = new CustomEvent('navigate', { detail: { page: 'module', moduleId } })
-  window.dispatchEvent(event)
+  if (canAccessModule(moduleId)) {
+    courseActions.startModule(moduleId)
+    emit('navigate', { page: 'module', moduleId })
+  }
+}
+
+const unlockTier = (tierNum) => {
+  courseActions.unlockTier(tierNum)
 }
 
 const resetProgressConfirm = () => {

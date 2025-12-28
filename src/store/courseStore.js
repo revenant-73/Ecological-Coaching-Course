@@ -1,11 +1,16 @@
 import { reactive } from 'vue'
+import { modules } from '../data/modules.js'
 
 const STORAGE_KEY = 'ecological_coach_progress'
+const PAYWALL_KEY = 'ecological_coach_paywall'
 
 const initialState = {
   currentModuleId: null,
   progress: {},
-  notes: {}
+  notes: {},
+  unlockedTiers: [0, 1, 2],
+  userEmail: null,
+  lastPurchase: null
 }
 
 function loadFromStorage() {
@@ -62,10 +67,10 @@ export const courseActions = {
   },
 
   getCompletionPercentage() {
-    const totalModules = Object.keys(courseStore.progress).length
+    const totalModules = modules.length
     if (totalModules === 0) return 0
     const completed = Object.values(courseStore.progress).filter(p => p.completed).length
-    return Math.round((completed / 9) * 100)
+    return Math.round((completed / totalModules) * 100)
   },
 
   resetProgress() {
@@ -73,5 +78,61 @@ export const courseActions = {
     courseStore.progress = {}
     courseStore.notes = {}
     saveToStorage(courseStore)
+  },
+
+  canAccessModule(moduleId) {
+    const module = modules.find(m => m.id === moduleId)
+    if (!module) return false
+    return courseStore.unlockedTiers.includes(module.tier)
+  },
+
+  unlockTier(tierNumber) {
+    if (!courseStore.unlockedTiers.includes(tierNumber)) {
+      courseStore.unlockedTiers.push(tierNumber)
+      courseStore.lastPurchase = Date.now()
+      saveToStorage(courseStore)
+    }
+  },
+
+  unlockedTierNumbers() {
+    return courseStore.unlockedTiers
+  },
+
+  isModuleLocked(moduleId) {
+    return !this.canAccessModule(moduleId)
+  },
+
+  getModulesByTier(tierNumber) {
+    return modules.filter(m => m.tier === tierNumber)
+  },
+
+  unlockAllTiers() {
+    courseStore.unlockedTiers = [0, 1, 2]
+    courseStore.lastPurchase = Date.now()
+    saveToStorage(courseStore)
+  },
+
+  getTierInfo() {
+    return {
+      currentTiers: courseStore.unlockedTiers,
+      tier0: {
+        name: 'Orientation',
+        duration: '10–15 min',
+        price: 'Free',
+        unlocked: true
+      },
+      tier1: {
+        name: 'Foundations & Translation',
+        duration: '35–45 min',
+        price: 'Free (for now)',
+        unlocked: courseStore.unlockedTiers.includes(1)
+      },
+      tier2: {
+        name: 'Implementation & Mastery',
+        duration: '25–35 min',
+        price: 'Free (for now)',
+        unlocked: courseStore.unlockedTiers.includes(2)
+      }
+    }
   }
 }

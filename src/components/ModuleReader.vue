@@ -11,6 +11,25 @@
         <span class="group-hover:text-blue-300 transition-colors">Back to Dashboard</span>
       </button>
 
+      <div v-if="isLocked" class="max-w-4xl mx-auto bg-yellow-900/20 border border-yellow-700 rounded-lg p-8 text-center">
+        <div class="text-4xl mb-4">🔒</div>
+        <h2 class="text-2xl font-bold text-yellow-200 mb-3">Module Locked</h2>
+        <p class="text-yellow-100 mb-6">
+          This module is part of <strong>Tier {{ module.tier }}</strong> and requires access to view.
+        </p>
+        <p class="text-yellow-100">
+          All content is currently free—you can unlock all tiers to explore the full course.
+        </p>
+        <button 
+          @click="unlockAllTiers"
+          class="mt-6 px-6 py-3 bg-yellow-600 hover:bg-yellow-700 text-white rounded-lg font-bold transition"
+        >
+          Unlock All Tiers
+        </button>
+      </div>
+
+      <template v-else>
+
       <div class="mb-14 animate-slide-in-right" style="animation-delay: 50ms">
         <div class="inline-block px-3 py-1 bg-gradient-to-r from-blue-500/20 to-purple-500/20 rounded-full mb-4 border border-blue-500/30">
           <span class="text-blue-300 text-xs font-bold uppercase tracking-widest">MODULE {{ module.number }}</span>
@@ -36,6 +55,17 @@
         </div>
       </div>
 
+      <div v-if="moduleArtifacts.length > 0" class="border-t border-slate-700 mt-12 pt-12">
+        <h2 class="text-2xl font-bold text-emerald-300 mb-6">Supporting Resources</h2>
+        <div class="space-y-4">
+          <ArtifactSection 
+            v-for="artifact in moduleArtifacts"
+            :key="artifact.id"
+            :artifact="artifact"
+          />
+        </div>
+      </div>
+
       <div class="flex flex-col sm:flex-row gap-5 mb-10 mt-12 animate-fade-in-up" style="animation-delay: 200ms">
         <button
           v-if="!progress.completed"
@@ -57,7 +87,7 @@
         
         <button
           @click="nextModule"
-          v-if="module.id < 8"
+          v-if="module.id < 7"
           class="group flex-1 relative overflow-hidden bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 hover:from-blue-700 hover:via-purple-700 hover:to-pink-700 text-white font-bold py-4 px-8 rounded-xl transition-all text-base sm:text-lg shadow-lg hover:shadow-2xl hover:shadow-blue-500/40 border border-blue-500/50 hover:border-blue-400/70 flex items-center justify-center gap-2"
         >
           <div class="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent group-hover:animate-shimmer" style="background-size: 1000px 100%; animation: shimmer 2s infinite;"></div>
@@ -76,6 +106,7 @@
       >
         <span class="group-hover:text-blue-300 transition-colors">← Back to Dashboard</span>
       </button>
+      </template>
     </div>
   </div>
 </template>
@@ -83,11 +114,13 @@
 <script setup>
 import { computed } from 'vue'
 import { modules } from '../data/modules.js'
+import { artifacts, getArtifact } from '../data/artifacts.js'
 import { courseStore, courseActions } from '../store/courseStore.js'
 import TextSection from './sections/TextSection.vue'
 import HeadingSection from './sections/HeadingSection.vue'
 import CalloutSection from './sections/CalloutSection.vue'
 import ReflectionSection from './sections/ReflectionSection.vue'
+import ArtifactSection from './sections/ArtifactSection.vue'
 
 const props = defineProps({
   moduleId: {
@@ -100,6 +133,12 @@ const emit = defineEmits(['navigate'])
 
 const module = computed(() => modules.find(m => m.id === props.moduleId))
 const progress = computed(() => courseActions.getProgress(props.moduleId))
+const isLocked = computed(() => !courseActions.canAccessModule(props.moduleId))
+
+const moduleArtifacts = computed(() => {
+  if (!module.value || !module.value.artifacts) return []
+  return module.value.artifacts.map(id => getArtifact(id)).filter(a => a)
+})
 
 const getSectionComponent = (type) => {
   const components = {
@@ -120,7 +159,7 @@ const goBack = () => {
 }
 
 const nextModule = () => {
-  if (props.moduleId < 8) {
+  if (props.moduleId < 7) {
     emit('navigate', { page: 'module', moduleId: props.moduleId + 1 })
   }
 }
@@ -131,5 +170,9 @@ const saveReflection = (data) => {
     ...notes,
     [data.key]: data.value
   })
+}
+
+const unlockAllTiers = () => {
+  courseActions.unlockAllTiers()
 }
 </script>
