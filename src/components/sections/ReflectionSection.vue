@@ -52,8 +52,10 @@ const reflectionNotes = ref(new Array(props.section.prompts.length).fill(''))
 watch(() => props.moduleId, () => {
   const saved = courseActions.getNotes(props.moduleId)
   const key = reflectionKey.value
-  if (saved[key]) {
-    reflectionNotes.value = Array.isArray(saved[key]) ? saved[key] : new Array(props.section.prompts.length).fill('')
+  if (saved[key] && Array.isArray(saved[key])) {
+    reflectionNotes.value = saved[key]
+  } else {
+    reflectionNotes.value = new Array(props.section.prompts.length).fill('')
   }
 }, { immediate: true })
 

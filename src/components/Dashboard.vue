@@ -17,18 +17,26 @@
               <h2 class="text-2xl font-bold mb-2 text-white">Your Progress</h2>
               <p class="text-gray-300 text-base sm:text-lg"><span class="font-semibold text-accent-orange">{{ completedModules }}</span> of <span class="font-semibold text-accent-teal-light">{{ modules.length }} modules</span> completed</p>
             </div>
-            <div class="w-full sm:w-64">
-              <div class="bg-gray-700 rounded-full h-5 overflow-hidden border border-gray-600 shadow-lg">
-                <div 
-                  class="h-full bg-accent-orange transition-all duration-700 ease-out shadow-lg relative"
-                  :style="{ width: completionPercentage + '%' }"
-                >
-                  <div class="absolute inset-0 bg-white/20 animate-pulse-soft"></div>
+            <div class="flex flex-col gap-4 w-full sm:w-auto">
+              <div class="w-full sm:w-64">
+                <div class="bg-gray-700 rounded-full h-5 overflow-hidden border border-gray-600 shadow-lg">
+                  <div 
+                    class="h-full bg-accent-orange transition-all duration-700 ease-out shadow-lg relative"
+                    :style="{ width: completionPercentage + '%' }"
+                  >
+                    <div class="absolute inset-0 bg-white/20 animate-pulse-soft"></div>
+                  </div>
                 </div>
+                <p class="text-gray-300 text-sm sm:text-base mt-3 text-right font-semibold">
+                  <span class="text-accent-orange">{{ completionPercentage }}%</span>
+                </p>
               </div>
-              <p class="text-gray-300 text-sm sm:text-base mt-3 text-right font-semibold">
-                <span class="text-accent-orange">{{ completionPercentage }}%</span>
-              </p>
+              <button
+                @click="viewReflections"
+                class="px-4 py-2 bg-accent-teal-light hover:bg-accent-teal text-white rounded-lg font-semibold transition-all text-sm sm:text-base"
+              >
+                📝 View Reflections
+              </button>
             </div>
           </div>
         </div>
@@ -115,5 +123,9 @@ const resetProgressConfirm = () => {
   if (confirm('Are you sure you want to clear all progress and notes? This cannot be undone.')) {
     courseActions.resetProgress()
   }
+}
+
+const viewReflections = () => {
+  emit('navigate', { page: 'reflections' })
 }
 </script>
