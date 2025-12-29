@@ -2,13 +2,13 @@
   <div class="group relative animate-fade-in-up">
     <div class="absolute inset-0 bg-accent-teal-light/10 rounded-xl blur-lg group-hover:blur-xl transition-all duration-500 opacity-0 group-hover:opacity-100"></div>
     <div class="relative bg-gray-800 border border-accent-teal-light group-hover:border-accent-teal-light backdrop-blur-sm p-6 sm:p-8 rounded-xl transition-all duration-500">
-      <h3 class="text-2xl font-bold text-white mb-7 flex items-center gap-3">
+      <h3 class="text-2xl font-bold text-white mb-5 flex items-center gap-3">
         <span class="text-2xl">✍️</span> 
         <span class="text-accent-teal-light">{{ section.title }}</span>
       </h3>
       
-      <div class="space-y-7">
-        <div v-for="(prompt, idx) in section.prompts" :key="idx" class="space-y-3">
+      <div class="space-y-5">
+        <div v-for="(prompt, idx) in section.prompts" :key="idx" class="space-y-2">
           <label class="block text-base sm:text-lg font-semibold text-white">
             {{ prompt }}
           </label>
@@ -22,7 +22,7 @@
         </div>
       </div>
 
-      <p v-if="section.instruction" class="text-gray-400 text-sm sm:text-base italic mt-7 pt-7 border-t border-accent-teal-light/20">
+      <p v-if="section.instruction" class="text-gray-400 text-sm sm:text-base italic mt-5 pt-5 border-t border-accent-teal-light/20">
         💭 {{ section.instruction }}
       </p>
     </div>

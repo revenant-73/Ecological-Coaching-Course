@@ -43,7 +43,7 @@
 
       <div class="group relative mb-10 animate-fade-in-up" style="animation-delay: 100ms">
         <div class="absolute inset-0 bg-accent-orange/5 rounded-2xl blur-xl group-hover:blur-2xl transition-all duration-500 opacity-0 group-hover:opacity-100"></div>
-        <div class="relative bg-gray-800 backdrop-blur-xl rounded-2xl border border-gray-700 hover:border-accent-orange p-8 sm:p-12 space-y-10 transition-all duration-500">
+        <div class="relative bg-gray-800 backdrop-blur-xl rounded-2xl border border-gray-700 hover:border-accent-orange p-8 sm:p-12 space-y-8 transition-all duration-500">
           <div v-for="(section, idx) in module.sections" :key="idx">
             <component 
               :is="getSectionComponent(section.type)"
