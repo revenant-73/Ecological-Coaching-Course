@@ -32,10 +32,12 @@ export const modules = [
       {
         type: 'reflection',
         title: 'QUICK REFLECTION',
+        intro: 'There are no “right” answers here. You’re just mapping your habits.',
         prompts: [
-          'Where do you feel the strongest urge to jump in during practice?',
-          'What do you usually say in those moments?',
-          'Why does silence feel irresponsible?'
+          'During practice, what situations pull you toward intervening the fastest? (Specific moments, not general habits.)',
+          'In those moments, what are you most tempted to add—information, reassurance, or control?',
+          'When you choose silence, what do you worry might happen if you don’t step in?',
+          'After the moment passes, what actually changed—if anything?'
         ],
         instruction: 'Don\'t fix it yet. Just notice it.'
       }

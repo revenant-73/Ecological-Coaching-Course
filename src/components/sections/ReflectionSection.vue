@@ -7,6 +7,10 @@
         <span class="text-accent-teal-light">{{ section.title }}</span>
       </h3>
       
+      <p v-if="section.intro" class="text-gray-300 text-base sm:text-lg mb-6 leading-relaxed">
+        {{ section.intro }}
+      </p>
+
       <div class="space-y-5">
         <div v-for="(prompt, idx) in section.prompts" :key="idx" class="space-y-2">
           <label class="block text-base sm:text-lg font-semibold text-white">
