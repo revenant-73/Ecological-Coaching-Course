@@ -14,7 +14,7 @@ export const modules = [
       },
       {
         type: 'text',
-        content: 'Most coaching systems reward **control**.\nClear instructions. Clean drills. Predictable outcomes.\n\nThis course will ask you to loosen your grip.\n\nNot because you\'re wrong.\nBut because the game is messier than the methods most of us were taught.\n\nIf stepping back feels irresponsible…  \nIf silence feels lazy…  \nIf letting players struggle feels risky…\n\nYou\'re not failing.\n\nYou\'re standing at the edge of real learning.'
+        content: 'Most coaching systems reward control.\nClear instructions. Clean drills. Predictable outcomes.\n\nThis course will ask you to shift where that control lives.\n\nNot because you’re wrong.\nBut because the game is messier than the methods most of us were taught.\n\nIf stepping back feels irresponsible…\nIf silence feels lazy…\nIf letting players search feels risky…\n\nYou’re not failing.\n\nYou’re standing at the edge of real learning.'
       },
       {
         type: 'heading',
@@ -22,12 +22,12 @@ export const modules = [
       },
       {
         type: 'text',
-        content: 'Which is coach-speak for: The game refuses to behave.\n\nThe ball doesn\'t arrive on schedule.\nOpponents don\'t cooperate.\nTeammates make decisions you didn\'t script.\n\nAnd yet…\nwe often train volleyball like it\'s a closed, predictable activity.\n\nThen we act surprised when it falls apart under pressure.\n\nThe chaos isn\'t the problem.\nOur attempt to eliminate it is.'
+        content: 'That’s coach-speak for:\nThe game refuses to behave.\n\nThe ball doesn’t arrive on schedule.\nOpponents don’t cooperate.\nTeammates make decisions you didn’t script.\n\nAnd yet…\nWe often train volleyball like it should behave.\nLike if we clean it up enough, it will comply.\n\nThen we act surprised when it falls apart under pressure.\n\nThe chaos isn’t the problem.\nOur attempt to eliminate it is.'
       },
       {
         type: 'callout',
-        title: 'MYTHS WE DEBUNK',
-        content: '**"Ecological coaching is chaos"**\n> No. It\'s designed chaos that produces clarity.\n\n**"No feedback means no improvement"**\n> Wrong. Players improve faster when they discover solutions.\n\n**"This is anti-technique"**\n> No. Technique emerges from smart constraints, not isolation.'
+        title: '💡 Myths We’re Clearing Up Early',
+        content: '“Ecological coaching is chaos.”\n> No. It’s intentional instability—designed to produce clarity in action.\n\n“No feedback means no improvement.”\n> Wrong. Feedback still matters.\nBut players adapt faster when they are supported in finding solutions, not just executing instructions.\n\n“This is anti-technique.”\n> No. Technique still matters.\nBut in this approach, form follows function—shaped by constraints, context, and intention, not isolation.'
       },
       {
         type: 'reflection',
