@@ -128,7 +128,7 @@ export const modules = [
   {
     id: 2,
     number: 3,
-    title: 'Translation Layer',
+    title: 'The Translation Problem',
     tier: 1,
     timeMinutes: 15,
     description: 'What can change without stopping play. Mental "Constraint Menu."',
@@ -140,12 +140,12 @@ export const modules = [
       },
       {
         type: 'text',
-        content: 'Ecological coaching is powerful.\nBut coaches still think like technicians.\n\nYou know what you want to fix: setter footwork, hitter decision-making, block timing.\n\nYou also know that stopping play to give feedback works against everything we\'ve just discussed.\n\nSo how do you **translate** your coaching intent into a constraint that operates *during* the game?'
+        content: 'Ecological coaching is powerful.\nBut most of us were trained to think like technicians.\n\nWe see a problem and immediately want to fix the player:\n- setter footwork\n- hitter decision-making\n- block timing\n\nAt the same time, we know that stopping play to explain it undercuts everything we’re trying to build.\n\nSo the real question becomes:\nHow do you translate coaching intent into a constraint that works while the game is still alive?'
       },
       {
         type: 'callout',
-        title: 'THE TRANSLATION QUESTION',
-        content: 'For each problem you see:\n\n1. **What am I actually training?** (the real skill, not the symptom)\n2. **What can change without stopping play?**\n3. **What NOT to change?** (preserving game realism)'
+        title: '💡 The Translation Question',
+        content: 'For every “problem” you notice, ask:\n\n**What am I actually training?**\n(The real skill—not the visible symptom.)\n\n**What can I change without stopping play?**\n(Rules, scoring, space, contacts, structure.)\n\n**What should I NOT change?**\n(What keeps this representative of the game.)\n\nIf you can’t answer all three, the task probably isn’t doing the work yet.'
       },
       {
         type: 'heading',
@@ -153,17 +153,17 @@ export const modules = [
       },
       {
         type: 'text',
-        content: 'If practice doesn\'t *look* like the game, don\'t expect it to *transfer* to the game.\n\nLines feel organized.\nThey also remove:\n- **Perception** (where is the play?)\n- **Timing** (when do I move?)\n- **Decision-making** (what\'s my option?)\n\nWhich is… most of volleyball.'
+        content: 'If practice doesn’t behave like the game, don’t expect it to transfer to the game.\n\nLines feel organized. They also remove:\n- **Perception** — Where is the play?\n- **Timing** — When do I move?\n- **Decision-making** — What’s my best option right now?\n\nWhich is… most of volleyball.\n\nWhen we clean the game up too much, we don’t simplify learning—we disconnect it.'
       },
       {
         type: 'callout',
-        title: 'TRADE-OFF CLARITY',
-        content: '**We replace:**\n- Partner passing for time → Information-rich chaos\n- Perfect reps → Adaptive solutions\n- Praise for compliance → Recognition of smart choices\n\nYes, it looks messier. That\'s the point. Messiness is realism.'
+        title: '💡 Trade-Off Clarity',
+        content: 'Ecological coaching means choosing different trade-offs.\n\nWe replace:\n- Partner passing for time → information-rich chaos\n- “Perfect” reps → adaptive solutions\n- Praise for compliance → recognition of smart choices\n\nYes, it looks messier. That messiness is realism doing its job.'
       },
       {
         type: 'callout',
-        title: 'COACH\'S CONFESSION',
-        content: 'Clean practices are comforting.\n\nThey\'re also lying to you.'
+        title: '💡 Coach’s Confession',
+        content: 'Clean practices are comforting.\nThey’re also lying to you.'
       },
       {
         type: 'heading',
@@ -171,7 +171,15 @@ export const modules = [
       },
       {
         type: 'text',
-        content: 'Instead of a playbook, you need a **Constraint Menu**.\n\nThis is a mental reference: When I see X behavior, I can adjust Y constraint without explanation.\n\nExamples:\n- **See: Setters panicking** → Adjust: Change rally structure (first contact to set = 2 touches max)\n- **See: Hitters not reading blocks** → Adjust: Blocker can only see setter, not hitter\n- **See: Passers giving up** → Adjust: Change scoring to reward tough digs'
+        content: 'Instead of a playbook, you need a Constraint Menu.\nNot written down. Not memorized.\n\nA mental reference that sounds like:\n“When I see X behavior, I can adjust Y constraint—without stopping play.”\n\nA few examples:\n\n**See: Setters panicking**\nAdjust: Change rally structure (First contact to set = max two touches)\nWhy: Reduces time without telling them how to move.\n\n**See: Hitters not reading the block**\nAdjust: Limit blocker vision (Blocker can only see the setter)\nWhy: Forces earlier perception without verbal cues.\n\n**See: Passers disengaging after errors**\nAdjust: Change scoring (Extra point for tough digs)\nWhy: Shifts value without motivational speeches.\n\nSame players.\nSame skills.\nDifferent environment.'
+      },
+      {
+        type: 'heading',
+        content: 'Bridge Forward'
+      },
+      {
+        type: 'text',
+        content: 'From here on, you’re not fixing mistakes.\nYou’re designing situations where better decisions become harder to avoid.'
       },
       {
         type: 'reflection',
