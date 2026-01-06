@@ -13,13 +13,23 @@
 
       <div class="space-y-5">
         <div v-for="(prompt, idx) in section.prompts" :key="idx" class="space-y-2">
-          <label class="block text-base sm:text-lg font-semibold text-white">
-            {{ prompt }}
-          </label>
+          <template v-if="typeof prompt === 'string'">
+            <label class="block text-base sm:text-lg font-semibold text-white">
+              {{ prompt }}
+            </label>
+          </template>
+          <template v-else>
+            <label class="block text-base sm:text-lg font-bold text-white uppercase tracking-tight">
+              {{ prompt.label }}
+            </label>
+            <p v-if="prompt.instruction" class="text-gray-300 text-sm sm:text-base leading-relaxed mb-1">
+              {{ prompt.instruction }}
+            </p>
+          </template>
           <textarea
             v-model="reflectionNotes[idx]"
             @input="saveReflection(idx)"
-            placeholder="Your thoughts..."
+            :placeholder="typeof prompt === 'string' ? 'Your thoughts...' : (prompt.placeholder || 'Your thoughts...')"
             class="w-full bg-gray-700 border border-accent-teal-light hover:border-accent-teal-light focus:border-accent-teal-light focus:ring-2 focus:ring-accent-teal-light/50 rounded-lg px-4 sm:px-5 py-3 sm:py-4 text-white placeholder-gray-500 focus:outline-none text-base sm:text-lg resize-none transition-all duration-300 backdrop-blur-sm"
             rows="4"
           ></textarea>

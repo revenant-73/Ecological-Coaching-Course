@@ -98,14 +98,30 @@ export const modules = [
       },
       {
         type: 'reflection',
-        title: 'ON-COURT CHALLENGE',
+        title: 'On-Court Challenge — Module 2',
         prompts: [
-          'Next practice, change **one rule** only',
-          'Say **nothing** about technique',
-          'Watch what emerges',
-          'Write down what surprised you'
+          {
+            label: 'Prompt 1: The Task Change',
+            instruction: 'In your next practice, change one task constraint (rule, scoring, space, or number of contacts).',
+            placeholder: 'Describe the activity and the single constraint you changed. Be specific.'
+          },
+          {
+            label: 'Prompt 2: Your Prediction',
+            instruction: 'Before running the activity, predict what behavior you expect to change.',
+            placeholder: 'What did you think players would do differently because of this task change? Focus on behavior, not technique.'
+          },
+          {
+            label: 'Prompt 3: What Emerged',
+            instruction: 'During the activity, avoid giving instructions about how to perform the skill. Observe what happens.',
+            placeholder: 'What behaviors actually changed once the task started? What adjustments did players make without being told?'
+          },
+          {
+            label: 'Prompt 4: The Surprise',
+            instruction: 'After the activity, reflect on what you didn’t anticipate.',
+            placeholder: 'What surprised you? This could be a solution you didn’t expect, a problem that disappeared, or a new challenge that emerged.'
+          }
         ],
-        instruction: 'Focus on behavioral change, not instruction.'
+        instruction: 'Reflection Reminder: Focus on what the task taught, not what you said.'
       }
     ]
   },
