@@ -46,55 +46,55 @@ export const modules = [
   {
     id: 1,
     number: 2,
-    title: 'Ecological Foundations',
+    title: 'Performance Is a Relationship',
     tier: 1,
     timeMinutes: 12,
     description: 'Core concepts: constraints, affordances, perception–action coupling.',
     artifacts: ['constraint-menu-cheatsheet'],
     sections: [
       {
-        type: 'heading',
-        content: 'Performance Is a Relationship'
-      },
-      {
         type: 'text',
-        content: 'Every volleyball action emerges from three interacting factors:\n\n- **The Player** (ability, confidence, fatigue)\n- **The Environment** (space, noise, opposition)\n- **The Task** (rules, scoring, contacts, structure)\n\nChange one — behavior changes.\n\nMost coaching focuses almost entirely on the player.\nTheir technique. Their effort. Their focus.\n\nThat\'s the smallest lever you have.'
-      },
-      {
-        type: 'callout',
-        title: 'CONCRETE EXAMPLE',
-        content: 'A hitter keeps getting blocked.\n\n**Traditional response:**\n> "Jump higher. Follow through."\n\n**Ecological response:**\n- Change the set tempo\n- Change the scoring (blocker earns a point for block, hitter gets two for kill)\n- Change the space the blocker must defend\n\nSame player. Different behavior. Problem solved without the player thinking about technique.'
+        content: 'By now, you may already feel the tension.\n\nIf you step in less…\nif you talk less…\nif you stop fixing things immediately…\n\nWhat actually shapes performance?\n\nThe answer is simpler—and more demanding—than most coaching models suggest.'
       },
       {
         type: 'heading',
-        content: 'Constraints: Your Real Coaching Tool'
+        content: 'Performance Is Not a Trait'
       },
       {
         type: 'text',
-        content: 'A constraint is simply a **boundary that shapes behavior**.\n\nGood constraints don\'t tell players what to do.\nThey make certain solutions unavoidable.\n\nThat\'s not manipulation.\nThat\'s learning.'
-      },
-      {
-        type: 'callout',
-        title: 'THREE TYPES OF CONSTRAINTS',
-        content: '**Individual Constraints**\n- Fear, fatigue, confidence, physical size\n- You can\'t directly control these\n\n**Environmental Constraints**\n- Noise, space, lighting, opponent pressure, court placement\n- You can modify these\n\n**Task Constraints** *(your primary tool)*\n- Rules, scoring, number of contacts, court size, rally structure\n- You change these first\n\n> If you remember nothing else: Change the task first.'
-      },
-      {
-        type: 'callout',
-        title: 'DESIGN PRINCIPLE',
-        content: 'If the same "mistake" keeps happening, the task is teaching it.\n\nThat\'s not sarcasm.\nThat\'s responsibility.'
+        content: 'It’s a Relationship.\n\nEvery volleyball action emerges from the interaction of three things:\n\n- **The Player** (ability, confidence, fatigue)\n- **The Environment** (space, noise, opposition)\n- **The Task** (rules, scoring, contacts, structure)\n\nChange one—and behavior changes.\n\nMost coaching effort is poured into the player: their technique, effort, or focus.\n\nBut that’s the smallest and least reliable lever you have—especially when the game speeds up.'
       },
       {
         type: 'heading',
-        content: 'Affordances: What Players Actually See'
+        content: 'Volleyball Is an Open Skill Sport'
       },
       {
         type: 'text',
-        content: 'Players don\'t react to instructions.\nThey act on **what they perceive**.\n\nA setter doesn\'t see:\n- footwork cues\n- coaching points\n- last night\'s film session\n\nThey see:\n- space\n- bodies\n- timing\n- opportunity\n\nThose opportunities are called **affordances**.'
+        content: 'That’s coach-speak for one thing:\nThe game refuses to behave.\n\nThe ball doesn’t arrive on schedule.\nOpponents don’t cooperate.\nTeammates make unscripted decisions.\n\nAnd yet we often train volleyball as if it should behave.\nAs if cleaning it up will make it stable.\n\nThen we act surprised when it collapses under pressure.\n\nThe chaos isn’t the problem.\nOur attempt to eliminate it is.'
       },
       {
-        type: 'callout',
-        title: 'OVER-COACHING WARNING',
-        content: 'When you shout answers, you become the player\'s eyes.\n\nAnd eyes don\'t develop when someone else is seeing for them.\n\nSilence is not neglect.\nIt\'s information.'
+        type: 'heading',
+        content: 'A Shift in Responsibility'
+      },
+      {
+        type: 'text',
+        content: 'Ecological coaching doesn’t ask you to coach less.\nIt asks you to coach earlier—at the level where behavior is actually shaped.\n\nInstead of asking:\n“What should I say to the player?”\n\nYou begin asking:\n“What is this task making inevitable?”'
+      },
+      {
+        type: 'heading',
+        content: 'Clearing Up a Few Misconceptions'
+      },
+      {
+        type: 'text',
+        content: '**“Ecological coaching is chaos.”**\nNo. It’s intentional instability—designed to clarify perception and decision-making.\n\n**“No feedback means no improvement.”**\nNo. Feedback still matters.\nBut adaptation accelerates when players are supported in discovering solutions, not just executing instructions.\n\n**“This is anti-technique.”**\nNo. Technique still matters.\nBut here, form follows function—shaped by constraints, context, and intention, not isolation.'
+      },
+      {
+        type: 'heading',
+        content: 'A Bridge Forward'
+      },
+      {
+        type: 'text',
+        content: 'From here on, the question changes.\n\nWe spend less time asking:\n“What should I say?”\n\nAnd far more time asking:\n“What is this task teaching?”'
       },
       {
         type: 'reflection',

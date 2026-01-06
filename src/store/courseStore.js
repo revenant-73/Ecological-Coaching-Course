@@ -17,13 +17,14 @@ function loadFromStorage() {
   const stored = localStorage.getItem(STORAGE_KEY)
   if (stored) {
     try {
-      return JSON.parse(stored)
+      const parsed = JSON.parse(stored)
+      return { ...initialState, ...parsed }
     } catch (e) {
       console.error('Failed to parse stored progress:', e)
-      return initialState
+      return { ...initialState }
     }
   }
-  return initialState
+  return { ...initialState }
 }
 
 function saveToStorage(state) {
