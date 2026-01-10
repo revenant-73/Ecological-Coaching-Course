@@ -140,12 +140,12 @@ export const modules = [
       },
       {
         type: 'text',
-        content: 'Ecological coaching is powerful.\nBut most of us were trained to think like technicians.\n\nWe see a problem and immediately want to fix the player:\n- setter footwork\n- hitter decision-making\n- block timing\n\nAt the same time, we know that stopping play to explain it undercuts everything we’re trying to build.\n\nSo the real question becomes:\nHow do you translate coaching intent into a constraint that works while the game is still alive?'
+        content: 'Ecological coaching is powerful.\n\nBut most of us were trained to think like technicians.\n\nWe see a problem and immediately want to fix the player:\n\n- setter footwork\n- hitter decision-making\n- block timing\n- defensive movement\n\nAt the same time, we know that stopping play to explain it undercuts everything we’re trying to build.\n\nSo the real challenge isn’t what you see.\n\nIt’s this:\n\n**How do you translate coaching intent into a constraint that works while the game is still alive?**'
       },
       {
         type: 'callout',
         title: '💡 The Translation Question',
-        content: 'For every “problem” you notice, ask:\n\n**What am I actually training?**\n(The real skill—not the visible symptom.)\n\n**What can I change without stopping play?**\n(Rules, scoring, space, contacts, structure.)\n\n**What should I NOT change?**\n(What keeps this representative of the game.)\n\nIf you can’t answer all three, the task probably isn’t doing the work yet.'
+        content: 'For every recurring issue you notice, ask yourself:\n\n**What am I actually training?**\n(The real skill — not the visible symptom.)\n\n**What can I change without stopping play?**\n(Rules, scoring, space, contacts, structure.)\n\n**What should I NOT change?**\n(What keeps this representative of the game.)\n\nIf you can’t answer all three, the task probably isn’t doing the work yet.'
       },
       {
         type: 'heading',
@@ -153,17 +153,17 @@ export const modules = [
       },
       {
         type: 'text',
-        content: 'If practice doesn’t behave like the game, don’t expect it to transfer to the game.\n\nLines feel organized. They also remove:\n- **Perception** — Where is the play?\n- **Timing** — When do I move?\n- **Decision-making** — What’s my best option right now?\n\nWhich is… most of volleyball.\n\nWhen we clean the game up too much, we don’t simplify learning—we disconnect it.'
+        content: 'If practice doesn’t behave like the game, don’t expect it to transfer to the game.\n\nVolleyball is an open skill sport. Information arrives late. Decisions must be made under pressure. Movement is rarely clean or predictable.\n\nLines feel organized. They also remove:\n\n- **Perception** — Where is the play developing?\n- **Timing** — When does the information actually arrive?\n- **Decision-making** — What option fits this moment?\n\nWhich is… most of volleyball.\n\nWhen we clean the game up too much, we don’t simplify learning — we disconnect it.'
       },
       {
         type: 'callout',
         title: '💡 Trade-Off Clarity',
-        content: 'Ecological coaching means choosing different trade-offs.\n\nWe replace:\n- Partner passing for time → information-rich chaos\n- “Perfect” reps → adaptive solutions\n- Praise for compliance → recognition of smart choices\n\nYes, it looks messier. That messiness is realism doing its job.'
+        content: 'Ecological coaching doesn’t remove structure. It changes what the structure serves.\n\nWe trade:\n- partner passing for time → **information-rich rallies**\n- perfect-looking reps → **adaptive solutions**\n- praise for compliance → **recognition of smart decisions**\n\nYes, it looks messier. That messiness is realism doing its job.'
       },
       {
         type: 'callout',
         title: '💡 Coach’s Confession',
-        content: 'Clean practices are comforting.\nThey’re also lying to you.'
+        content: 'Clean practices are comforting. They’re also lying to you.'
       },
       {
         type: 'heading',
@@ -171,7 +171,36 @@ export const modules = [
       },
       {
         type: 'text',
-        content: 'Instead of a playbook, you need a Constraint Menu.\nNot written down. Not memorized.\n\nA mental reference that sounds like:\n“When I see X behavior, I can adjust Y constraint—without stopping play.”\n\nA few examples:\n\n**See: Setters panicking**\nAdjust: Change rally structure (First contact to set = max two touches)\nWhy: Reduces time without telling them how to move.\n\n**See: Hitters not reading the block**\nAdjust: Limit blocker vision (Blocker can only see the setter)\nWhy: Forces earlier perception without verbal cues.\n\n**See: Passers disengaging after errors**\nAdjust: Change scoring (Extra point for tough digs)\nWhy: Shifts value without motivational speeches.\n\nSame players.\nSame skills.\nDifferent environment.'
+        content: 'Instead of a playbook, you need a Constraint Menu.\n\nNot written down. Not memorized.\n\nA mental reference that sounds like:\n\n> “When I see this behavior, I know which constraint I can adjust — without stopping play.”'
+      },
+      {
+        type: 'heading',
+        content: 'Volleyball-True Examples'
+      },
+      {
+        type: 'callout',
+        title: 'Setters Forcing Tempo',
+        content: '**See:** Setters rushing sets off imperfect passes or forcing quicks out of system\n\n**Adjust (Task Constraint):** Limit attacking options to high ball or pipe only on broken plays\n\n**Why this works:** Preserves real setting decisions, reduces time pressure without coaching footwork, and allows tempo regulation to emerge naturally.'
+      },
+      {
+        type: 'callout',
+        title: 'Hitters Not Solving the Block',
+        content: '**See:** Hitters swinging straight into blocks, especially in transition\n\n**Adjust (Scoring Constraint):** Tooling or high hands = full point. Blocks still score for the defense.\n\n**Why this works:** Keeps the block real, shifts hitter attention to reading, and rewards functional outcomes without technical cues.'
+      },
+      {
+        type: 'callout',
+        title: 'Passers Playing Not to Miss',
+        content: '**See:** Passers bailing out, popping balls high, or disengaging after errors\n\n**Adjust (Scoring Constraint):** 2 points for a pass that allows all attack options; 1 point for a playable pass; 0 points for free balls or overpasses.\n\n**Why this works:** Preserves serve–receive realism and reframes success without motivational speeches. Decision quality becomes visible in the score.'
+      },
+      {
+        type: 'callout',
+        title: 'Defenders Guessing Early',
+        content: '**See:** Defenders drifting, leaning, or committing before hitter contact\n\n**Adjust (Task + Scoring Constraint):** For a defensive point to count, defenders must be stopped and balanced at hitter contact. Movement after contact is unrestricted.\n\n**Why this works:** Reinforces vision over guessing and preserves late information pickup. Anticipation becomes patience, not prediction.'
+      },
+      {
+        type: 'callout',
+        title: '💡 Ecological ≠ Reckless',
+        content: 'Ecological coaching does not mean moving early, guessing, or letting chaos run the gym. Volleyball is too fast for blind anticipation.\n\nWhat we are developing is **calibrated readiness**:\n- players who stay visually connected\n- who are stopped and balanced at contact\n- and who move decisively once the information is real\n\nAnticipation isn’t about being early. It’s about being **right**.'
       },
       {
         type: 'heading',
@@ -179,17 +208,48 @@ export const modules = [
       },
       {
         type: 'text',
-        content: 'From here on, you’re not fixing mistakes.\nYou’re designing situations where better decisions become harder to avoid.'
+        content: 'From here on, you’re not fixing mistakes. You’re designing situations where better decisions become harder to avoid.'
       },
       {
         type: 'reflection',
-        title: 'BUILD YOUR MENU',
+        title: 'Build Your Constraint Menu — Module 3',
         prompts: [
-          'Think of three problems you see most often',
-          'For each: What constraint change would address it?',
-          'Can you make that change mid-rally?'
+          {
+            label: 'Prompt 1: Name the Behavior (Not the Flaw)',
+            instruction: 'Identify three recurring behaviors you see in your gym.',
+            placeholder: 'Describe what players are doing, not what you think they “lack.”(Example: “late to cover tips” instead of “bad defense.”)'
+          },
+          {
+            label: 'Prompt 2: Translate the Intent',
+            instruction: 'For each behavior, identify the real skill you want to develop.',
+            placeholder: 'What decision, perception, or timing problem sits underneath this behavior?'
+          },
+          {
+            label: 'Prompt 3: Design the Constraint',
+            instruction: 'For each skill, choose one task, scoring, or space constraint that could shape it without stopping play.',
+            placeholder: 'What rule, scoring tweak, or structural change would make a better solution more likely?'
+          },
+          {
+            label: 'Prompt 4: Reality Check',
+            instruction: 'Pressure-test each constraint for game realism.',
+            placeholder: 'Could this constraint exist in a real match or close enough to transfer? What are you careful not to change?'
+          },
+          {
+            label: 'Prompt 5: Mid-Rally Test',
+            instruction: 'Decide whether this constraint can be applied mid-rally or between points without explanation.',
+            placeholder: 'If yes, how? If no, what would need to change to make it live?'
+          }
         ],
-        instruction: 'Write these down. This becomes your coaching reference.'
+        instruction: 'Write these down. This becomes your Constraint Menu — not a script, a reference.'
+      },
+      {
+        type: 'callout',
+        title: '💡 Why this is a major upgrade',
+        content: '- **Moves coaches from problem naming** → skill intent → design\n- **Prevents “cool constraint” syndrome**\n- **Forces representativeness thinking**\n- **Makes the menu usable in the moment**\n- **Aligns perfectly with the Translation Question**\n\nMost importantly, it teaches coaches to stop asking:\n> “What drill fixes this?”\n\nAnd start asking:\n> “What could I change right now that lets the game teach it?”'
+      },
+      {
+        type: 'heading',
+        content: 'If you had to coach this entire session without stopping play, what would you still be able to change?'
       }
     ]
   },
