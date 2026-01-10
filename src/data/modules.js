@@ -200,7 +200,7 @@ export const modules = [
       {
         type: 'callout',
         title: '💡 Ecological ≠ Reckless',
-        content: 'Ecological coaching does not mean moving early, guessing, or letting chaos run the gym. Volleyball is too fast for blind anticipation.\n\nWhat we are developing is **calibrated readiness**:\n- players who stay visually connected\n- who are stopped and balanced at contact\n- and who move decisively once the information is real\n\nAnticipation isn’t about being early. It’s about being **right**.'
+        content: 'Ecologically, playing great defense does not mean moving early, guessing, or letting chaos run the gym. Volleyball is too fast for blind anticipation.\n\nWhat we are developing is **calibrated readiness**:\n- players who stay visually connected\n- who are stopped and balanced at contact\n- and who move decisively once the information is real\n\nAnticipation isn’t about being early. It’s about being **right**.'
       },
       {
         type: 'heading',
