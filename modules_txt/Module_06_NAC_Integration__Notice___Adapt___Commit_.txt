@@ -1,0 +1,91 @@
+MODULE 6: NAC Integration (Notice • Adapt • Commit)
+Description: Real-time coaching operating system. Decision-making loop.
+============================================================================================================================
+
+### NAC: Your Real-Time Coaching Operating System
+
+By now you've learned the concepts.
+
+But in the moment—mid-practice, match pressure—you need a **decision-making loop** that's automatic.
+
+That loop is NAC.
+
+It's not a script. It's a compass.
+
+### The Three Moves
+
+--- NOTICE ---
+What is actually happening?
+
+Not what *should* happen.
+Not what you *want* to happen.
+
+**Actual observation:**
+- Are passers moving forward or back?
+- Are setters decision-ready or reactive?
+- Is intensity rising or dropping?
+
+Notice without judgment. Just data.
+------------------
+
+--- ADAPT ---
+Change one constraint.
+
+Not the game. Not the rules.
+One **specific element** that addresses what you noticed:
+
+- Change scoring
+- Change contact limits
+- Change court positioning
+- Change rally structure
+- Change your silence (or your presence)
+
+One change. Watch what happens.
+------------------
+
+--- COMMIT ---
+Don't revert immediately.
+
+Let the constraint work for 5–10 minutes. Let players adapt. Watch if the behavior changes.
+
+If it does → You've found something. Build on it.
+If it doesn't → Different constraint next time.
+
+No permanent decisions. Just iteration.
+------------------
+
+### Real-World NAC Examples
+
+--- SCENARIO: Flat Energy ---
+**Notice:** Players are going through motions. Low intensity.
+
+**Adapt:** Change scoring. Winning team stays on court. Losing team sits out. (Suddenly every point matters.)
+
+**Commit:** Run this for 10 minutes. Watch energy return. Now you know what drives engagement for this team.
+------------------
+
+--- SCENARIO: Setters Panicking ---
+**Notice:** Setters are making poor decisions under pressure. High error rate.
+
+**Adapt:** First contact to set = max 2 touches. (Forces faster decision-making in safer context.)
+
+**Commit:** Run this until decision-making improves. Then gradually add complexity.
+------------------
+
+--- SCENARIO: Players Not Reading Blocks ---
+**Notice:** Hitters are swinging into obvious blocks. No shot selection.
+
+**Adapt:** Blocker can only see the setter, not the hitter. (Blocker can't cheat toward the line or angle.)
+
+**Commit:** Run 15 minutes. Hitters must now read spacing and make actual decisions.
+------------------
+
+### REFLECTION: PRACTICE NAC THIS WEEK
+Questions/Prompts:
+1. At your next practice, pick one thing to NOTICE
+2. Make one constraint change (ADAPT)
+3. Let it run for 10 minutes without reverting (COMMIT)
+4. What happened?
+
+Closing Instruction: NAC only works when you use it. Start small.
+

@@ -10,11 +10,19 @@ export const modules = [
     sections: [
       {
         type: 'heading',
-        content: 'Why This Might Feel Uncomfortable (And Why That\'s a Good Sign)'
+        content: 'Why This Might Feel Uncomfortable (And Why That’s a Good Sign)'
       },
       {
         type: 'text',
-        content: 'Most coaching systems reward control.\nClear instructions. Clean drills. Predictable outcomes.\n\nThis course will ask you to shift where that control lives.\n\nNot because you’re wrong.\nBut because the game is messier than the methods most of us were taught.\n\nIf stepping back feels irresponsible…\nIf silence feels lazy…\nIf letting players search feels risky…\n\nYou’re not failing.\n\nYou’re standing at the edge of real learning.'
+        content: 'Most coaching systems reward control.\n\nClear instructions.\nClean drills.\nPredictable outcomes.\n\nThose habits didn’t come from nowhere.\nThey were learned for good reasons—often to keep players safe, organized, and progressing in environments that felt manageable.\n\nThis course isn’t here to shame that history.\n\nBut it will ask you to shift where control lives.\n\nNot because you’ve been coaching “wrong.”\nBut because the game is messier than the methods most of us were taught.\n\nIf stepping back feels irresponsible…\nIf silence feels lazy…\nIf letting players search feels risky…\n\nYou’re not failing.\n\nYou’re standing at the edge of real learning.'
+      },
+      {
+        type: 'heading',
+        content: 'Silence Is Not the Goal'
+      },
+      {
+        type: 'text',
+        content: 'Silence is not a virtue.\nIt’s a tool.\n\nAnd like any tool, it only works when it serves the right purpose.\n\nIf silence protects learning, autonomy, and discovery—use it.\nIf silence costs safety, dignity, or connection—step in.\n\nEcological coaching is not about saying less at all costs.\nIt’s about intervening for alignment, not for order.\n\nYou are still responsible for the environment.\nYou are still responsible for the people in it.\n\nWhat changes is why you step in—not whether you’re allowed to.'
       },
       {
         type: 'heading',
@@ -22,24 +30,44 @@ export const modules = [
       },
       {
         type: 'text',
-        content: 'That’s coach-speak for:\nThe game refuses to behave.\n\nThe ball doesn’t arrive on schedule.\nOpponents don’t cooperate.\nTeammates make decisions you didn’t script.\n\nAnd yet…\nWe often train volleyball like it should behave.\nLike if we clean it up enough, it will comply.\n\nThen we act surprised when it falls apart under pressure.\n\nThe chaos isn’t the problem.\nOur attempt to eliminate it is.'
+        content: 'That’s coach-speak for a simple truth:\n\nThe game refuses to behave.\n\nThe ball doesn’t arrive on schedule.\nOpponents don’t cooperate.\nTeammates make decisions you didn’t script.\n\nAnd yet…\n\nWe often train volleyball like it should behave.\nLike if we clean it up enough, it will comply.\n\nThen we act surprised when it falls apart under pressure.\n\nThe chaos isn’t the problem.\nOur attempt to eliminate it is.'
       },
       {
-        type: 'callout',
-        title: '💡 Myths We’re Clearing Up Early',
-        content: '“Ecological coaching is chaos.”\n> No. It’s intentional instability—designed to produce clarity in action.\n\n“No feedback means no improvement.”\n> Wrong. Feedback still matters.\nBut players adapt faster when they are supported in finding solutions, not just executing instructions.\n\n“This is anti-technique.”\n> No. Technique still matters.\nBut in this approach, form follows function—shaped by constraints, context, and intention, not isolation.'
+        type: 'heading',
+        content: 'Control Isn’t the Villain'
+      },
+      {
+        type: 'text',
+        content: 'Control is understandable.\n\nIt creates order.\nIt calms anxiety.\nIt makes practices look productive.\n\nBut in complex, fast, open-skill games, control has limits.\n\nWhen we intervene to:\nkeep things tidy\nrestore predictability\nreduce our own discomfort\n\nWe often remove the very problem the player needs to learn how to solve.\n\nEcological coaching doesn’t remove structure.\nIt changes what structure is for.'
+      },
+      {
+        type: 'heading',
+        content: 'Care vs. Control (And Why This Is Hard to See)'
+      },
+      {
+        type: 'text',
+        content: 'Here’s the uncomfortable overlap:\n\nCare can feel like control.\nControl often pretends to be care.\n\nBoth sound like:\n“I just want to help.”\n\nThe difference shows up in the effect.\n\nCare keeps players inside the problem—supported, curious, connected.\nControl makes the problem go away—temporarily, cleanly, comfortably.\n\nThis course won’t ask you to get this right immediately.\n\nIt will ask you to notice it.'
+      },
+      {
+        type: 'heading',
+        content: 'What This Course Is Actually Asking of You'
+      },
+      {
+        type: 'text',
+        content: 'Not to coach less.\nNot to abandon technique.\nNot to let chaos run the gym.\n\nBut to slow down one internal habit:\n\nThe reflex to fix before understanding what the environment is already teaching.\n\nBefore asking:\n“What should I say?”\n\nYou’ll begin asking:\n“What is this situation inviting the player to do?”\n\nAnd sometimes the best response will still be your voice.\nJust for a different reason.'
       },
       {
         type: 'reflection',
         title: 'QUICK REFLECTION',
-        intro: 'There are no “right” answers here. You’re just mapping your habits.',
+        intro: 'There are no “right” answers here.\nYou’re just mapping your habits.',
         prompts: [
-          'During practice, what situations pull you toward intervening the fastest? (Specific moments, not general habits.)',
-          'In those moments, what are you most tempted to add—information, reassurance, or control?',
+          'During practice, what specific moments pull you toward intervening the fastest?\n(Be concrete—missed serves, sloppy rallies, visible frustration, silence.)',
+          'In those moments, what are you most tempted to add?\nInformation? Reassurance? Structure? Control?',
           'When you choose silence, what do you worry might happen if you don’t step in?',
-          'After the moment passes, what actually changed—if anything?'
+          'After the moment passes, what actually changed—if anything?',
+          'Looking back, what value were you trying to protect in that moment?\nCare and connection?\nOr order and predictability?'
         ],
-        instruction: 'Don\'t fix it yet. Just notice it.'
+        instruction: 'Don’t fix it yet.\nJust notice it.'
       }
     ]
   },

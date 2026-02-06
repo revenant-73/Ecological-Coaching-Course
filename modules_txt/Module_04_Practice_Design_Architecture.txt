@@ -1,0 +1,112 @@
+MODULE 4: Practice Design Architecture
+Description: Game-based framework: Arrival, Main, Transfer, Reflection.
+===============================================================================================================
+
+### You Are Not Running Drills. You Are Designing Systems.
+
+Abandon the idea that practice is a sequence of exercises.
+
+Practice is an **architecture**.
+
+It has four phases that work together to:
+1. Prepare players emotionally
+2. Present the challenge
+3. Transfer learning to game complexity
+4. Cement understanding
+
+### The Practice Architecture
+
+--- PHASE 1: ARRIVAL GAME (5–10 min) ---
+Purpose: Emotional readiness + baseline data
+
+A simple, repeatable game that:
+- Requires no instruction
+- Reveals individual and team state
+- Sets tone (joyful, not militaristic)
+- Gives you coaching data before you "teach"
+
+Example: Score to 5 with no scoring rule changes. You just watch.
+------------------
+
+--- PHASE 2: MAIN GAME (15–25 min) ---
+Purpose: Training the skill you identified
+
+A game with **intentional constraints** that make the desired behavior unavoidable.
+
+Examples:
+- "Setter must move with the ball" → Sets up better timing
+- "First contact setter must be touching the net" → Forces passers to pass deeper
+- "Blocker gets +2 points for block" → Rewards intelligent positioning
+
+You stay mostly silent. Observe patterns.
+------------------
+
+--- PHASE 3: TRANSFER GAME (10–15 min) ---
+Purpose: Full game complexity
+
+Remove the constraint or modify it less aggressively.
+
+Now the players apply what they discovered under normal pressure. This is where you see if the learning transfers.
+
+Stay silent unless a safety issue emerges.
+------------------
+
+--- PHASE 4: REFLECTION (3–5 min) ---
+Purpose: Conscious understanding
+
+Not "Here's what you did wrong."
+
+Instead:
+> "What did you notice changed when we removed that rule?"
+
+Let players articulate the learning. Then add nothing.
+------------------
+
+### Why Fewer Games Matter
+
+Running five different drills means:
+- Setup changes (5 minutes)
+- Transition confusion (5 minutes)
+- Rules repeated five times (5 minutes)
+- Shallow learning (no depth in any one thing)
+
+Running one game for 30 minutes with evolving constraints means:
+- One setup
+- One set of rules (modified, not replaced)
+- Natural repetition emergence
+- Deep learning in one challenge
+
+### Anchor Games (Sample Set)
+
+Every program needs 3–5 anchor games. These are your defaults:
+
+**Game 1: Wash**
+- Full court, normal scoring
+- Every game reveals everything
+- Constraints applied as needed
+
+**Game 2: King of the Court** (or Rally Scoring)
+- Winners stay, losers rotate
+- Creates natural intensity and game-speed urgency
+
+**Game 3: 2v2 (or Modified Sides)**
+- Isolates decision-making
+- Reduces hiding spots
+- Forces involvement
+
+--- FOR EACH ANCHOR GAME, DEFINE: ---
+**Purpose:** What skill are we developing?
+**Reveals:** What does this game expose about player understanding?
+**Constraint Sliders:** What can we adjust without changing the game entirely?
+**Failure Modes:** How do players cheat or avoid the challenge?
+**Language to Avoid:** What instructions would undermine the design?
+------------------
+
+### REFLECTION: DESIGN YOUR ANCHOR GAMES
+Questions/Prompts:
+1. What 3–4 games form the core of your practice?
+2. For each: What constraints can you adjust?
+3. What would you never say during these games?
+
+Closing Instruction: This is your foundation. Spend time on this.
+
