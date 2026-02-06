@@ -77,12 +77,16 @@ export const modules = [
     title: 'Performance Is a Relationship',
     tier: 1,
     timeMinutes: 12,
-    description: 'Core concepts: constraints, affordances, perception–action coupling.',
+    description: 'Why behavior changes without saying a word',
     artifacts: ['constraint-menu-cheatsheet'],
     sections: [
       {
+        type: 'heading',
+        content: 'From Control to Conditions'
+      },
+      {
         type: 'text',
-        content: 'By now, you may already feel the tension.\n\nIf you step in less…\nif you talk less…\nif you stop fixing things immediately…\n\nWhat actually shapes performance?\n\nThe answer is simpler—and more demanding—than most coaching models suggest.'
+        content: 'If Module 1 asked you to notice why you intervene,\nModule 2 asks you to notice where performance actually comes from.\n\nBecause if performance were simply a trait inside the athlete—\na matter of effort, toughness, or technique—\n\nthen instruction would be enough.\n\nSay the right thing.\nFix the right detail.\nRepeat it until it sticks.\n\nBut volleyball doesn’t work that way.\n\nNot consistently.\nNot under pressure.\nNot when the game speeds up.'
       },
       {
         type: 'heading',
@@ -90,66 +94,75 @@ export const modules = [
       },
       {
         type: 'text',
-        content: 'It’s a Relationship.\n\nEvery volleyball action emerges from the interaction of three things:\n\n- **The Player** (ability, confidence, fatigue)\n- **The Environment** (space, noise, opposition)\n- **The Task** (rules, scoring, contacts, structure)\n\nChange one—and behavior changes.\n\nMost coaching effort is poured into the player: their technique, effort, or focus.\n\nBut that’s the smallest and least reliable lever you have—especially when the game speeds up.'
+        content: 'It’s a relationship.\n\nEvery action on the court emerges from the interaction of three things:\n\n**The Player**\n(skill, confidence, fatigue, history)\n\n**The Environment**\n(space, noise, score, opponents, consequences)\n\n**The Task**\n(rules, scoring, constraints, structure)\n\nChange one—and behavior changes.\n\nYou already know this.\n\nYou see it when the same player:\nswings differently late in a set\npasses differently at 23–23\nmakes better decisions when consequences feel real\n\nSame player.\nDifferent relationship.'
       },
       {
         type: 'heading',
-        content: 'Volleyball Is an Open Skill Sport'
+        content: 'Why Player-Focused Fixes Have Limits'
       },
       {
         type: 'text',
-        content: 'That’s coach-speak for one thing:\nThe game refuses to behave.\n\nThe ball doesn’t arrive on schedule.\nOpponents don’t cooperate.\nTeammates make unscripted decisions.\n\nAnd yet we often train volleyball as if it should behave.\nAs if cleaning it up will make it stable.\n\nThen we act surprised when it collapses under pressure.\n\nThe chaos isn’t the problem.\nOur attempt to eliminate it is.'
+        content: 'Most coaching effort still starts with the player:\ntechnique cues\nreminders\ncorrections\nmotivation\n\nSometimes that works—and it still has a place.\n\nBut in complex, fast, open-skill games, it has limits.\n\nWhen the game speeds up:\nattention narrows\nverbal information drops out\nhabits take over\n\nIf the environment and the task don’t support the behavior you want,\nplayer-focused fixes carry the entire load.\n\nThat’s a heavy lift under pressure.\n\nEcological coaching doesn’t remove instruction.\nIt reduces how much instruction has to do when it matters most.'
       },
       {
         type: 'heading',
-        content: 'A Shift in Responsibility'
+        content: 'Volleyball Still Refuses to Behave'
       },
       {
         type: 'text',
-        content: 'Ecological coaching doesn’t ask you to coach less.\nIt asks you to coach earlier—at the level where behavior is actually shaped.\n\nInstead of asking:\n“What should I say to the player?”\n\nYou begin asking:\n“What is this task making inevitable?”'
+        content: 'Volleyball is an open skill sport.\n\nThat means:\ninformation arrives late\ndecisions are time-pressured\nmovement is rarely repeatable\n\nAnd yet we often train it as if stability were the goal.\n\nClean reps.\nPredictable tosses.\nIsolated technique.\n\nThen we’re surprised when those skills don’t survive the mess.\n\nThe chaos isn’t a flaw in the athlete.\nIt’s the defining feature of the game.'
       },
       {
         type: 'heading',
-        content: 'Clearing Up a Few Misconceptions'
+        content: 'A Shift in Coaching Responsibility'
       },
       {
         type: 'text',
-        content: '**“Ecological coaching is chaos.”**\nNo. It’s intentional instability—designed to clarify perception and decision-making.\n\n**“No feedback means no improvement.”**\nNo. Feedback still matters.\nBut adaptation accelerates when players are supported in discovering solutions, not just executing instructions.\n\n**“This is anti-technique.”**\nNo. Technique still matters.\nBut here, form follows function—shaped by constraints, context, and intention, not isolation.'
+        content: 'Ecological coaching doesn’t ask you to coach less.\n\nIt asks you to coach earlier—\nat the level where behavior is shaped before words are needed.\n\nInstead of asking:\nWhat should I tell the player?\n\nYou begin asking:\nWhat is this task inviting—or forcing—the player to do?\n\nEvery task:\nmakes some actions easier\nmakes others harder\nteaches something, whether you intend it or not.\n\nYou’re always coaching.\n\nThe question is whether the environment is helping you—or quietly undoing you.'
       },
       {
         type: 'heading',
-        content: 'A Bridge Forward'
+        content: 'What This Does (And Does Not) Mean'
       },
       {
         type: 'text',
-        content: 'From here on, the question changes.\n\nWe spend less time asking:\n“What should I say?”\n\nAnd far more time asking:\n“What is this task teaching?”'
+        content: 'This does not mean:\nyou stop correcting\nyou abandon technique\nyou let confusion linger indefinitely\n\nIt means:\ninstruction becomes more precise\nintervention becomes more intentional\nlearning survives pressure more often\n\nCare still matters.\nConnection still matters.\n\nYou’re just choosing a lever that holds when the game doesn’t cooperate.'
       },
       {
         type: 'reflection',
-        title: 'On-Court Challenge — Module 2',
+        title: 'ON-COURT CHALLENGE — MODULE 2',
+        intro: 'This is not about getting it right.\nIt’s about seeing differently.',
         prompts: [
           {
             label: 'Prompt 1: The Task Change',
             instruction: 'In your next practice, change one task constraint (rule, scoring, space, or number of contacts).',
-            placeholder: 'Describe the activity and the single constraint you changed. Be specific.'
+            placeholder: 'Describe the activity and the single change you made. Be specific.'
           },
           {
             label: 'Prompt 2: Your Prediction',
-            instruction: 'Before running the activity, predict what behavior you expect to change.',
-            placeholder: 'What did you think players would do differently because of this task change? Focus on behavior, not technique.'
+            instruction: 'Before starting, predict what behavior you expect to change.',
+            placeholder: 'Focus on decisions or movement, not technique.'
           },
           {
             label: 'Prompt 3: What Emerged',
-            instruction: 'During the activity, avoid giving instructions about how to perform the skill. Observe what happens.',
-            placeholder: 'What behaviors actually changed once the task started? What adjustments did players make without being told?'
+            instruction: 'During the activity, avoid giving instructions about how to perform the skill.',
+            placeholder: 'Observe what actually changes once the task is live.'
           },
           {
             label: 'Prompt 4: The Surprise',
-            instruction: 'After the activity, reflect on what you didn’t anticipate.',
-            placeholder: 'What surprised you? This could be a solution you didn’t expect, a problem that disappeared, or a new challenge that emerged.'
+            instruction: 'Afterward, reflect on what you didn’t anticipate.',
+            placeholder: 'A solution you didn’t expect. A problem that disappeared. A new challenge that emerged.'
           }
         ],
-        instruction: 'Reflection Reminder: Focus on what the task taught, not what you said.'
+        instruction: 'Focus on what the task taught—not what you said.'
+      },
+      {
+        type: 'heading',
+        content: 'Bridge Forward'
+      },
+      {
+        type: 'text',
+        content: 'If Module 1 helped you notice why you intervene,\nand Module 2 showed you where performance really comes from,\n\nthe next question becomes unavoidable:\n\nHow do you translate what you’re seeing into a change the game can feel—\nwithout stopping it?\n\nThat’s the problem we solve next.'
       }
     ]
   },
