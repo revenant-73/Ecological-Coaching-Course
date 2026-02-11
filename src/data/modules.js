@@ -327,71 +327,87 @@ export const modules = [
     title: 'Practice Design Architecture',
     tier: 2,
     timeMinutes: 15,
-    description: 'Game-based framework: Arrival, Main, Transfer, Reflection.',
+    description: 'Designing sessions that don’t collapse under pressure',
     artifacts: ['practice-planning-template', 'sample-season-arc'],
     sections: [
       {
         type: 'heading',
-        content: 'You Are Not Running Drills. You Are Designing Systems.'
+        content: 'From Moments to Systems'
       },
       {
         type: 'text',
-        content: 'Abandon the idea that practice is a sequence of exercises.\n\nPractice is an **architecture**.\n\nIt has four phases that work together to:\n1. Prepare players emotionally\n2. Present the challenge\n3. Transfer learning to game complexity\n4. Cement understanding'
+        content: 'By now, you can:\n\n- Notice why you intervene (Module 1)\n- See performance as a relationship (Module 2)\n- Translate what you see into live constraints (Module 3)\n\nBut translation inside a rally is only part of the job.\n\nThe bigger question is this:\n\nHow do you design an entire practice\nso learning compounds instead of resets every 10 minutes?\n\nPractice isn’t a sequence of drills.\n\nIt’s an architecture.'
       },
       {
         type: 'heading',
-        content: 'The Practice Architecture'
-      },
-      {
-        type: 'callout',
-        title: 'PHASE 1: ARRIVAL GAME (5–10 min)',
-        content: 'Purpose: Emotional readiness + baseline data\n\nA simple, repeatable game that:\n- Requires no instruction\n- Reveals individual and team state\n- Sets tone (joyful, not militaristic)\n- Gives you coaching data before you "teach"\n\nExample: Score to 5 with no scoring rule changes. You just watch.'
-      },
-      {
-        type: 'callout',
-        title: 'PHASE 2: MAIN GAME (15–25 min)',
-        content: 'Purpose: Training the skill you identified\n\nA game with **intentional constraints** that make the desired behavior unavoidable.\n\nExamples:\n- "Setter must move with the ball" → Sets up better timing\n- "First contact setter must be touching the net" → Forces passers to pass deeper\n- "Blocker gets +2 points for block" → Rewards intelligent positioning\n\nYou stay mostly silent. Observe patterns.'
-      },
-      {
-        type: 'callout',
-        title: 'PHASE 3: TRANSFER GAME (10–15 min)',
-        content: 'Purpose: Full game complexity\n\nRemove the constraint or modify it less aggressively.\n\nNow the players apply what they discovered under normal pressure. This is where you see if the learning transfers.\n\nStay silent unless a safety issue emerges.'
-      },
-      {
-        type: 'callout',
-        title: 'PHASE 4: REFLECTION (3–5 min)',
-        content: 'Purpose: Conscious understanding\n\nNot "Here\'s what you did wrong."\n\nInstead:\n> "What did you notice changed when we removed that rule?"\n\nLet players articulate the learning. Then add nothing.'
-      },
-      {
-        type: 'heading',
-        content: 'Why Fewer Games Matter'
+        content: 'Architecture, Not Formula'
       },
       {
         type: 'text',
-        content: 'Running five different drills means:\n- Setup changes (5 minutes)\n- Transition confusion (5 minutes)\n- Rules repeated five times (5 minutes)\n- Shallow learning (no depth in any one thing)\n\nRunning one game for 30 minutes with evolving constraints means:\n- One setup\n- One set of rules (modified, not replaced)\n- Natural repetition emergence\n- Deep learning in one challenge'
-      },
-      {
-        type: 'heading',
-        content: 'Anchor Games (Sample Set)'
-      },
-      {
-        type: 'text',
-        content: 'Every program needs 3–5 anchor games. These are your defaults:\n\n**Game 1: Wash**\n- Full court, normal scoring\n- Every game reveals everything\n- Constraints applied as needed\n\n**Game 2: King of the Court** (or Rally Scoring)\n- Winners stay, losers rotate\n- Creates natural intensity and game-speed urgency\n\n**Game 3: 2v2 (or Modified Sides)**\n- Isolates decision-making\n- Reduces hiding spots\n- Forces involvement'
+        content: 'The four phases below are not a rigid script.\n\nThey’re a functional lens.\n\nYou may blend them.\nYou may shorten them.\nYou may adjust based on age or time.\n\nThe goal isn’t perfection.\n\nThe goal is depth.'
       },
       {
         type: 'callout',
-        title: 'FOR EACH ANCHOR GAME, DEFINE:',
-        content: '**Purpose:** What skill are we developing?\n**Reveals:** What does this game expose about player understanding?\n**Constraint Sliders:** What can we adjust without changing the game entirely?\n**Failure Modes:** How do players cheat or avoid the challenge?\n**Language to Avoid:** What instructions would undermine the design?'
+        title: 'Phase 1: Arrival Game (5–10 Minutes)',
+        content: 'Purpose: Emotional readiness + information gathering.\n\nThis is not anti-warmup.\n\nPlayers still move.\nStill touch the ball.\nStill elevate heart rate.\n\nThe difference is this:\n\nYou begin inside a representative game.\n\nSimple.\nRepeatable.\nLow explanation.\n\nExample:\nPlay to 5. No special rules. You observe.\n\nYou’re collecting data:\nEnergy.\nCommunication.\nDecision tempo.\nMovement quality.\n\nThis becomes your baseline.'
+      },
+      {
+        type: 'callout',
+        title: 'Phase 2: Main Game (15–25 Minutes)',
+        content: 'Purpose: Train one identified skill.\n\nApply one shaping constraint.\n\nLet it breathe.\n\nAvoid constant novelty.\n\nLet behavior reorganize.'
+      },
+      {
+        type: 'heading',
+        content: 'Guardrail: Don’t Chase Activity'
+      },
+      {
+        type: 'text',
+        content: 'Fast transitions feel productive.\n\nFrequent resets feel organized.\n\nBut learning deepens when pressure stays stable.\n\nFewer games.\nLonger exposure.\nClear constraints.'
+      },
+      {
+        type: 'callout',
+        title: 'Phase 3: Transfer Game (10–15 Minutes)',
+        content: 'Purpose: Remove or reduce the scaffold.\n\nReturn toward normal play.\n\nObserve:\n\nDid learning survive?\n\nIf not, that’s information.\n\nNot failure.'
+      },
+      {
+        type: 'callout',
+        title: 'Phase 4: Reflection (3–5 Minutes)',
+        content: 'Purpose: Make learning conscious without overloading it.\n\nShort.\nFocused.\nPlayer-led when possible.\n\nThen move on.'
+      },
+      {
+        type: 'heading',
+        content: 'Anchor Games (Foundation, Not Decoration)'
+      },
+      {
+        type: 'text',
+        content: 'Define 3–5 stable environments you shape repeatedly.\n\nNot reinvented daily.\n\nEach should include:\n\nPurpose\nReveals\nConstraint Sliders\nFailure Modes\nLanguage to Avoid\n\nStability creates depth.'
+      },
+      {
+        type: 'heading',
+        content: 'When You Stop Play'
+      },
+      {
+        type: 'text',
+        content: 'You intervene when:\n\n- Safety is compromised\n- Emotional dignity is at risk\n- Representativeness collapses\n- Confusion replaces challenge\n\nOtherwise, let the system work.'
       },
       {
         type: 'reflection',
-        title: 'DESIGN YOUR ANCHOR GAMES',
+        title: 'REFLECTION',
+        intro: '',
         prompts: [
-          'What 3–4 games form the core of your practice?',
-          'For each: What constraints can you adjust?',
-          'What would you never say during these games?'
+          'Design one full session using this architecture.',
+          'Run it once without adding extra drills.',
+          'Notice what changes.'
         ],
-        instruction: 'This is your foundation. Spend time on this.'
+        instruction: ''
+      },
+      {
+        type: 'heading',
+        content: 'Bridge Forward'
+      },
+      {
+        type: 'text',
+        content: 'You can now:\n\n- Notice values\n- See relationships\n- Translate through constraints\n- Architect sessions\n\nThe remaining variable is behavioral:\n\nYour voice.\nYour silence.\nYour presence.\n\nThat’s next.'
       }
     ]
   },
